@@ -13,11 +13,15 @@
 
 <!ELEMENT autor (apellido, nombre)>
 <!ATTLIST autor foto #PCDATA>
+<!ATTLIST autor ciudad #PCDATA>
+<!ATTLIST autor pais #PCDATA>
+<!ATTLIST autor residencia #PCDATA>
+<!ATTLIST autor telefono #PCDATA>
+<!ATTLIST autor correo #PCDATA>
 <!ELEMENT nombre (#PCDATA)>
-<!ATTLIST nombre pattern "[a-z]+">
 
 <!ELEMENT apellido (#PCDATA)>
-<!ATTLIST apellido pattern "[a-z]+">
+<!ATTLIST autor apellido pattern "[a-z]+">
 <!ATTLIST autor cedula ID #REQUIRED ?>
 
 

@@ -29,13 +29,13 @@ public class Autores{
             @JsonProperty("foto") String foto) {
         this.cedula = cedula;
         this.nombre = nombre;
+        this.apellido = apellido;
         this.ciudad = ciudad;
         this.pais = pais;
         this.residencia = residencia;
         this.telefono = telefono;
         this.correo = correo;
         this.foto = foto;
-        this.apellido = apellido;
     }
 
     public String getNombre() {

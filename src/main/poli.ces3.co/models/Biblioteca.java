@@ -19,7 +19,7 @@ public class Biblioteca {
    private String titulo;
 
 
-   private List<Autores> autor;
+   private List<Autores> autor = null;
 
     @JsonCreator
     public Biblioteca(@JsonProperty("nombre") String nombre,
