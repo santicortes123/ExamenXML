@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="bib">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="libro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titulo" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="autor">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="apellido" type="xs:string" />
+                    <xs:element name="nombre" type="xs:string" />
+                    <xs:element name="ciudad" type="xs:string"/>
+                    <xs:element name="pais" type="xs:string"/>
+                    <xs:element name="residencia" type="xs:string"/>
+                    <xs:element name="telefono" type="xs:string"/>
+                    <xs:element name="correo" type="xs:string"/>
+                  </xs:sequence>
+                  <xs:attribute name="foto" type="xs:string" use="optional" />
+                  <xs:attribute name="cedula" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="editorial" type="xs:string" />
+              <xs:element name="precio" type="xs:decimal" />
+            </xs:sequence>
+            <xs:attribute name="anyo" type="xs:unsignedShort" use="required" />
+            <xs:attribute name="pais" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="centro" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

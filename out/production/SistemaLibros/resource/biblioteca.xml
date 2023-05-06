@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE bib SYSTEM "biblioteca.dtd">
+<bib xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="biblioteca.xsd" nombre="Tomas Carrasquilla" centro="poblado">
+    <libro anyo="1994">
+        <titulo>TCP/IP Illustrated</titulo>
+        <autor
+			foto="https://crearmiempresa.es/wp-content/uploads/2015/07/frases-de-steve-jo
+			bs.jpg" cedula="1234">
+            <apellido>stevens</apellido>
+            <nombre>W.</nombre>
+        </autor>
+        <editorial>Addison-Wesley</editorial>
+        <precio>65.95</precio>
+    </libro>
+    <libro anyo="1992">
+        <titulo>Advanced Programming for Unix environment</titulo>
+        <autor cedula="12354">
+            <apellido>CORTES</apellido>
+            <nombre>SANTI</nombre>
+        </autor>
+        <editorial>Addison-Wesley</editorial>
+        <precio>65.95</precio>
+    </libro>
+    <libro anyo="2000">
+        <titulo>Data on the Web</titulo>
+        <autor cedula="12346">
+            <apellido>abiteboul</apellido>
+            <nombre>Serge</nombre>
+        </autor>
+        <autor cedula="12347">
+            <apellido>buneman</apellido>
+            <nombre>Peter</nombre>
+        </autor>
+        <autor cedula="12348">
+            <apellido>suciu</apellido>
+            <nombre>Dan</nombre>
+        </autor>
+        <editorial>Morgan Kaufmann editorials</editorial>
+        <precio>39.95</precio>
+    </libro>
+    <libro anyo="1999">
+        <titulo> Economics of Technology for Digital TV</titulo>
+        <autor cedula="12349">
+            <apellido>gerbarg</apellido>
+            <nombre>Darcy</nombre>
+        </autor>
+        <editorial>Kluwer Academic editorials</editorial>
+        <precio>129.95</precio>
+    </libro>
+</bib>

@@ -1,0 +1,27 @@
+<!ELEMENT bib (libro+)>
+<!ATTLIST bib portada #PCDATA>
+<!ATTLIST bib nombre #PCDATA>
+        <!ATTLIST bib noNamespaceSchemaLocation #PCDATA>
+        <!ATTLIST bib centro #PCDATA>
+<!ATTLIST bib portada #PCDATA>
+<!ELEMENT libro (titulo, autor+, editorial, precio)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST libro pais (ESP | FRA | ITA | ALE) #FIXED "ESP">
+<!ATTLIST libro anyo #PCDATA #REQUIRED pattern "(19[9-9][0-9]|20[0-1][0-9]|2022)">
+
+<!ELEMENT autor (apellido, nombre)>
+<!ATTLIST autor foto #PCDATA>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre pattern "[a-z]+">
+
+<!ELEMENT apellido (#PCDATA)>
+<!ATTLIST apellido pattern "[a-z]+">
+<!ATTLIST autor cedula ID #REQUIRED ?>
+
+
+<!--<!ELEMENT bib (libro)>
+<!ELEMENT libro (#PCDATA)>
+<!ATTLIST bib nombre #PCDATA>
+<!ATTLIST bib centro #PCDATA>-->
